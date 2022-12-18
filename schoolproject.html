@@ -1,0 +1,682 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-comatible" content="IE edge">
+              <meta name="viewport" content="width=device=width intial scale=1,0">
+              <script src="https://cdn.tailwindcss.com"></script>
+                  <title>Rk</title>
+            </head>
+            <body class="bg-gray-900"> 
+
+                <header>
+                    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-900">
+                        <div class="flex flex-wrap justify-between items-center">
+                            <div class="flex justify-start items-center">
+                                <button id="toggleSidebar" aria-expanded="true" aria-controls="sidebar" class="hidden p-2 mr-3 text-gray-600 rounded cursor-pointer lg:inline hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700">
+                                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                                </button>
+                                <button aria-expanded="true" aria-controls="sidebar" class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer lg:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                                  <svg aria-hidden="true" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                  <span class="sr-only">Toggle sidebar</span>
+                                </button>
+                                <a href="#" class="flex mr-4">
+                                  <img src="https://flowbite.s3.amazonaws.com/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
+                                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ronak</span>
+                                </a>
+                                
+                                <form class="w-64 lg:w-full lg:mx-10 lg:block lg:pl-2">
+                                  <label for="topbar-search" class="sr-only">Search</label>
+                                  <div class="relative mt-1 lg:w-96">
+                                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                      <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                                    </div>
+                                    <input type="text" onkeyup="search()"  id="find" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Search">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                        </div>
+                    </nav>
+                  </header>
+
+<section id="myTable">
+                 
+          
+
+
+      <div class="container px-10 py-24 mx-auto flex md:items-center lg:items-start ">
+        <div class="w-96 flex-shrink-0  mx-0  text-center  sm:w-full sm:mx-auto">
+
+                  <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                    <div class="container px-5 py-24 mx-auto">
+                      <div class="-my-8 divide-y-2 divide-gray-800">
+                        <div class="product">
+                        <div class="py-8 flex flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                           <img class="w-56 rounded" src="Screenshot (24).png" > </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2" id="Delhi">DELHI</h2>
+                            <p class="leading-relaxed">Delhi is a beautiful city and it is the capital of India. It is an old city because it has many buildings that were built during the ancient time. Delhi has two parts one is old Delhi which is built during the Mughal period and New Delhi which has many beautiful parks and big new buildings. It has India Gate, Qutab Minar, Jama Masjid, and Parliament house. Many tourists across the world come to visit these places. Prime Minister hoists the national flag on the Red Fort on Independence Day and republic day. Delhi is also the heart of India.</p>
+                            <a href="Delhi.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="Screenshot (38).png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2" id="chandigarch">Chandigarh</h2>
+                            <p class="leading-relaxed">Chandigarh, the dream city of India's first Prime Minister, Sh. Jawahar Lal Nehru, was planned by the famous French architect Le Corbusier. Picturesquely located at the foothills of Shivaliks, it is known as one of the best experiments in urban planning and modern architecture in the twentieth century in India.</p>
+                            <a href="Chandigarh.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="Screenshot (53).png" >
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Jammu & Kashmir</h2>
+                            <p class="leading-relaxed">Jammu and Kashmir, union territory of India (until October 31, 2019, a state), located in the northern part of the Indian subcontinent centred on the plains around Jammu to the south and the Vale of Kashmir to the north. The union territory is part of the larger region of Kashmir, which has been the subject of dispute between India, Pakistan, and China since the partition of the subcontinent in 1947.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="product">
+                          <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                              <img class="w-56 rounded" src="Screenshot (57).png" > 
+                              </div>
+                            <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Ladakh</h2>
+                            <p class="leading-relaxed">tuated in the eastern portion of the state of Jammu & Kashmir.  Ladakh island of beautiful monasteries and colorful mountains; tourism in the state has been a booming industry ever since government of India opened it up for tourists. People of Ladakh have been asking for UT status for decades, due region’s cultural difference from Jammu and Kashmir. Finally, the government of India has passed a Jammu and Kashmir Re-organisation Act 2019 which was assented by the President of India on 9th August 2019.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                            </div>               </div></div>
+                            <div class="product">
+                                                 <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                                                  <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                                                    <img class="w-56 rounded" src="Screenshot (54).png" > 
+                                                    </div>
+                                                  <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Lakshadweep</h2>
+                            <p class="leading-relaxed">India’s smallest Union Territory Lakshadweep is an archipelago consisting of 36 islands with an area of 32 sq km. It is a uni-district Union Territory and is comprised of 12 atolls, three reefs, five submerged banks and ten inhabited islands. The islands comprise of 32 sq km. The capital is Kavaratti and it is also the principal town of the UT. All Islands are 220 to 440 km away from the coastal city of Kochi in Kerala, in the emerald Arabian Sea.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a></div>
+                          </div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="Screenshot (55).png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Puducherry</h2>
+                            <p class="leading-relaxed">Puducherry, original name Putucceri, formerly (until 2006) Pondicherry, also spelled Pondichéry, union territory of India. It was formed in 1962 out of the four former colonies of French India: Pondicherry (now Puducherry) and Karaikal along India’s southeastern Coromandel Coast, surrounded by Tamil Nadu state; Yanam, farther north along the eastern coast in the delta region of the Godavari River, surrounded by Andhra Pradesh state; and Mahe, lying on the western Malabar Coast, surrounded by Kerala state.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a></div>
+                          </div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="Screenshot (56).png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Andaman and Nicobar Islands</h2>
+                            <p class="leading-relaxed">The Andaman and Nicobar Islands is a union territory of India consisting of 572 islands, of which 37 are inhabited, at the junction of the Bay of Bengal and the Andaman Sea.[6] The territory is about 150 km (93 mi) north of Aceh in Indonesia and separated from Thailand and Myanmar by the Andaman Sea. </p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+
+                                                <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="Screenshot (58).png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Dadra & Nagar Haveli and Daman & Diu</h2>
+                            <p class="leading-relaxed">Dadra and Nagar Haveli, district, Dadra and Nagar Haveli and Daman and Diu union territory, west-central India, located in the western part of the country and situated between the states of Gujarat to the north and Maharashtra to the south. It lies some 15 miles (24 km) from the Arabian Sea and about 80 miles (130 km) north of Mumbai (Bombay). The territory consists of two sections—Dadra and Nagar Haveli—which together embrace roughly 70 villages. Its administrative headquarters is located in Silvassa. Area 190 square miles (491 square km). Pop. (2011) 342,853.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a></div>
+                          </div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="Screenshot (39).png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Punjab</h2>
+                            <p class="leading-relaxed">Punjab is a state situated in the North-Western part of India. Most of the people from Punjab speak Punjabi language. The capital of Punjab is Chandigarh. 
+                              It is known as the most fertile land of Punjab meaning land of five rivers. The rivers like Satluj, Ravi and Beas are found in Punjab. The major cities of the state are Patiala, Ludhiana, Jalandhar and Amritsar.</p>
+                            <a href="punjab.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="rajasthan.png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Rajasthan</h2>
+                            <p class="leading-relaxed">Rajasthan is India's largest state by area (342,239 km2 which scattered in 10.4% of India's total area. It is most famous for its cultural and natural beauty. It is a northern Indian state bordering Pakistan.Rajasthan or the land of Kings is the best example of the old and new; the ancient and the modern cultural heritage. Its name truly justified with lavish forts and majestic palaces that are apt reminders of a rich, romantic past that speaks of heroism, honor and chivalry.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="haryana.png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Haryana</h2>
+                            <p class="leading-relaxed">Haryana, state in north-central India. It is bounded on the northwest by the state of Punjab and the union territory of Chandigarh, on the north and northeast by the states of Himachal Pradesh and Uttarakhand, on the east by the state of Uttar Pradesh and the union territory of Delhi, and on the south and southwest by the state of Rajasthan. The city of Chandigarh, within the Chandigarh union territory, serves as the capital of not only that territory but also of the states of Haryana and Punjab.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="bihar.png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Bihar</h2>
+                            <p class="leading-relaxed">Bihar is situated in the North-east part of India. It is at the eleventh position in India if seen area wise. In the north of Bihar, there is Nepal. In the south of Bihar, Jharkhand is situated. In the east of Bihar, West Bengal is situated and in the west, it shares its border with Uttar Pradesh.
+
+                              Patna is the capital of Bihar. It was built by Ajatashatru. Patna was earlier known as Patliputra. The Ganga is the longest and the largest river in Bihar. There are 38 districts in Bihar.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="gujrat.png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Gujarat</h2>
+                            <p class="leading-relaxed">Gujarat, state of India, located on the country’s western coast, on the Arabian Sea. It encompasses the entire Kathiawar Peninsula (Saurashtra) as well as the surrounding area on the mainland.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="uttarpradesh.png" > 
+                            </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Uttar Pradesh</h2>
+                            <p class="leading-relaxed">Uttar Pradesh, with a total area of 243,290 square kilometres (93,935 sq mi), is India's fourth-largest state in terms of land area and is roughly of same size as United Kingdom. It is situated on the northern spout of India and shares an international boundary with Nepal.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="madhya pradesh.png" > </div>
+                                <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Madhya Pradesh</h2>
+                            <p class="leading-relaxed">Madhya Pradesh is the second largest Indian state by area and the fifth largest state by population with over 72 million residents. It borders the states of Uttar Pradesh to the northeast, Chhattisgarh to the east, Maharashtra to the south, Gujarat to the west, and Rajasthan to the northwest.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="arunanchal pradesh.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Arunachal Pradesh</h2>
+                            <p class="leading-relaxed">. Arunachal Pradesh is the largest of the Seven Sister States of Northeast India by area. Arunachal Pradesh shares a 1,129 km border with China's Tibet Autonomous Region.
+
+                              As of the 2011 Census of India, Arunachal Pradesh has a population of 1,382,611 and an area of 83,743 square kilometres (32,333 sq mi). </p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="assam.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Assam</h2>
+                            <p class="leading-relaxed">Arunachal Pradesh, state of India. It constitutes a mountainous area in the extreme northeastern part of the country and is bordered by the kingdom of Bhutan to the west, the Tibet Autonomous Region of China to the north, Myanmar (Burma) and the Indian state of Nagaland to the south and southeast, and the Indian state of Assam to the south and southwest. The capital is Itanagar.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="goa.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Goa</h2>
+                            <p class="leading-relaxed">Goa is a state on the southwestern coast of India within the Konkan region, geographically separated from the Deccan highlands by the Western Ghats. It is located between the Indian states of Maharashtra to the north and Karnataka to the east and south, with the Arabian Sea forming its western coast. It is India's smallest state by area and its fourth-smallest by population. </p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                  </div></div>
+                </div>
+                  
+                  
+                <div class="product">
+                  
+                  <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                      <img class="w-56 rounded" src="andhra pradesh.png" > 
+                          </div>
+                    <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Andhra Pradesh</h2>
+                            <p class="leading-relaxed">Andhra Pradesh is located in the south eastern coast of India and is the eighth largest state in the country. The state is bordered by Chhattisgarh to the north, Odisha to the northeast, Telangana and Karnataka to the west, Tamil Nadu to the south, and the Bay of Bengal to the east.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="himachal pradesh.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Himachal Pradesh</h2>
+                            <p class="leading-relaxed">Himachal Pradesh is the northernmost state of India and shares borders with the union territories of Jammu and Kashmir and Ladakh to the north, and the states of Punjab to the west, Haryana to the southwest, Uttarakhand to the southeast and a very narrow border with Uttar Pradesh to the south.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="jharkhand.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Jharkhand</h2>
+                            <p class="leading-relaxed">Jharkhand, state of India, located in the northeastern part of the country. Jharkhand is bordered by the states of Bihar to the north, West Bengal to the east, Odisha to the south, Chhattisgarh to the west, and Uttar Pradesh to the northwest. Its capital is Ranchi.
+
+                              Jharkhand, one of India’s newest states, was carved out of the southern portion of Bihar in 2000.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="karnatka.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Karnataka</h2>
+                            <p class="leading-relaxed">It is the largest state in South India. The neighbouring states of Karnataka are Goa, Maharashtra, Telangana, Andhra Pradesh, Kerala and Tamil Nadu. It is bound by Arabian Sea to its West. Karnataka has many colleges and universities serving the needs of a large Indian population. </p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded " src="karala.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Kerala</h2>
+                            <p class="leading-relaxed">Kerala is a state on the Malabar Coast of India. It was formed on 1 November 1956, following the passage of the States Reorganisation Act, by combining Malayalam-speaking regions of the erstwhile regions of Cochin, Malabar, South Canara, and Thiruvithamkoor.[14][15] Spread over 38,863 km2 (15,005 sq mi), Kerala is the 21st largest Indian state by area.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="madhya pradesh.png" > </div>
+                                <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Madhya Pradesh</h2>
+                            <p class="leading-relaxed">Madhya Pradesh is a state in central India. Its capital is Bhopal, and the largest city is Indore, with Jabalpur, Ujjain, Gwalior, Sagar, and Rewa being the other major cities. Madhya Pradesh is the second largest Indian state by area and the fifth largest state by population with over 72 million residents. It borders the states of Uttar Pradesh to the northeast, Chhattisgarh to the east, Maharashtra to the south, Gujarat to the west, and Rajasthan to the northwest.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="maharastra.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Maharashtra</h2>
+                            <p class="leading-relaxed">Maharashtra is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau. Maharashtra is the second-most populous state in India and the second-most populous country subdivision globally. It was formed on 1 May 1960 by splitting the bilingual Bombay State, which had existed since 1956, into majority Marathi-speaking Maharashtra and Gujarati-speaking Gujarat. </p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="manipur.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Manipur</h2>
+                            <p class="leading-relaxed">Manipur, state of India, located in the northeastern part of the country. It is bordered by the Indian states of Nagaland to the north, Assam to the west, and Mizoram to the southwest and by Myanmar (Burma) to the south and east. </p>
+   <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="meghalaya.png" > </div>
+                                <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Meghalaya</h2>
+                            <p class="leading-relaxed">Meghalaya, state of India, located in the northeastern part of the country. It is bounded by the Indian state of Assam to the north and northeast and by Bangladesh to the south and southwest. The state capital is the hill town of Shillong, located in east-central Meghalaya.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="mizorum.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Mizoram</h2>
+                            <p class="leading-relaxed">Mizoram is a state in the Republic of India. It is in the eastern region beyond Bangladesh. It covers an area of 8,139 square miles (21,080 km2). It is bigger than the nation of El Salvador but smaller than the State of Israel. In traditional Indian geography it falls under the North-east Indian zone. In 2011, Mizoram had 1,091,014 people. It has fewer people than every other state except Sikkim.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="nagaland.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Nagaland</h2>
+                            <p class="leading-relaxed">The State of Nagaland was formally inaugurated on December 1st, 1963, as the 16th State of the Indian Union. It is bounded by Assam in the West, Myanmar (Burma) on the east, Arunachal Pradesh and part of Assam on the North and Manipur in the South.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="odisha.png" > </div>
+                                <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Odisha</h2>
+                            <p class="leading-relaxed">Odisha, formerly Orissa, is a state in Eastern India, with an area of 60,162 square miles (155,820 km2),[1] and population of almost 42 million. Oriya or Odia is the most widely spoken language in the state and is used on an official basis alongside English.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="sikkim.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Sikkim</h2>
+                            <p class="leading-relaxed">Sikkim, state in India is located in the northeastern part of the country, in the eastern Himalayas. It is one of the smallest states in India. Sikkim is bordered by the Tibet Autonomous Region of China to the north and northeast, by Bhutan to the southeast, by the Indian state of West Bengal to the south, and by Nepal to the west. The capital is Gangtok, in the southeastern part of the state</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="tamilnadu.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Tamil Nadu</h2>
+                            <p class="leading-relaxed">Tamil Nadu is a state in southern India. It covers more than 50,200 square miles (130,000 square km). Tamil people constitute the majority of the state's population, and Tamil is the state's official language. Tamil Nadu's capital is Chennai, which is an industrial centre, but the state is essentially agricultural.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="telangana.png" > </div>
+                                <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Telangana</h2>
+                            <p class="leading-relaxed">Telangana is the 29th state of India, formed on the 2nd of June 2014. The state has an area of 1,14,840 Sq Km and has a population of 3,52,86,757. The Telangana region was part of the Hyderabad state from Sept 17th 1948 to Nov 1st 1956, until it was merged with Andhra state to form the Andhra Pradesh state.</p>
+ <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="tripura.png" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Tripura</h2>
+                            <p class="leading-relaxed">Tripura is one of the states, situated in the north-eastern region of India. It is also known as one of the seventh sisters of north-east India. It shares its boundary with Assam and Mizoram and also shares international border of 856 km with Bangladesh. Total area of the state is 10,492 Kms.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="" > 
+                                </div>
+                          <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">Uttarakhand</h2>
+                            <p class="leading-relaxed">Uttarakhand, formerly Uttaranchal, state of India, located in the northwestern part of the country. It is bordered to the northwest by the Indian state of Himachal Pradesh, to the northeast by the Tibet Autonomous Region of China, to the southeast by Nepal, and to the south and southwest by the Indian state of Uttar Pradesh. Its capital is the northwestern city of Dehra Dun.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div></div>
+                        </div>
+                        <div class="product">
+                        <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <img class="w-56 rounded" src="west bengal.png" > </div>
+                                <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-white title-font mb-2">West Bengal</h2>
+                            <p class="leading-relaxed">West Bengal is the fourth most populous state in India. It is also the seventh most populous sub-national entity in the world. West Bengal is the sixth largest contributor to India's GDP. Both West Bengal and Bangladesh are parts of historical and geographic region of Bengal.</p>
+                            <a href="comingF.html" class="text-indigo-400 inline-flex items-center mt-4">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div></div>
+                      </div>
+                    </div>
+                  </section>
+
+                    </div></div></section>
+
+
+
+                    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-900">
+                     
+                                  </ul>
+                              </div>
+                          
+                      
+                      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                      <div class="sm:flex sm:items-center sm:justify-between inline-flex">
+                          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© Ronak 2022 <a href="#" class="hover:underline">RK™</a>. All Rights Reserved.
+                          </span>
+                      </div>
+                      </div>
+                  </footer>
+                  
+            </div></div>
+
+
+                    <script type="text/javascript">
+                      function search() {
+                      let filter = document.getElementById('find').value.toUpperCase();
+                      let item = document.querySelectorAll('.product');
+                      let l = document.getElementsByTagName('h2');
+                      for(var i = 0;i<=l.length;i++){
+                      let a=item[i].getElementsByTagName('h2')[0];
+                      let value=a.innerHTML || a.innerText || a.textContent;
+                      if(value.toUpperCase().indexOf(filter) > -1) {
+                      item[i].style.display="";
+                      }
+                      else
+                      {
+                      item[i].style.display="none";
+                      }
+                      }
+                      }
+                      </script>
+
+
+            </body></html>
