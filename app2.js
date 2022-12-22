@@ -1,4 +1,4 @@
-var headersToAnimate = [ "CAPITAL" , "FAMOUS" ]
+var headersToAnimate = [ "CHEAPEST" , "AND" , "FAMOUS" ]
 var startReversAnimationAfter = 1000; //ms
 
 function reverseAnimation(headerIndex) {
