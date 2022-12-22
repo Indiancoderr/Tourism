@@ -23,4 +23,4 @@ function animateHeaders(headerIndex) {
   setTimeout(function () { reverseAnimation(headerIndex) }, 100 * i + startReversAnimationAfter);
 }
 
-animateHeaders(0)
+animateHeaders(0) 
